@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Container, Col, Row, Card, ListGroup, Button } from 'react-bootstrap'
 
 const Body = () => {
@@ -6,7 +7,12 @@ const Body = () => {
       <Row>
         <Col md={8}>
           <Card>
-            <Card.Img variant='top' src='holder.js/100px180?text=Image cap' />
+            <Image
+              src='/macbook1.jpg'
+              alt='A Macbook image'
+              width={300}
+              height={300}
+            />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
               <Card.Text>
