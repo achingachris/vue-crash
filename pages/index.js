@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Container } from 'react-bootstrap'
 
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -12,11 +13,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>``
+      <main>
         <Header />
-        <Body />
+        <Container>
+          <Body />
+        </Container>
       </main>
-
       <Footer />
     </div>
   )
