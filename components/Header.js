@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <div>
-      <h1>Fundraiser</h1>
-    </div>
+    <header className='text-center align-content-center align-items-center mt-5'>
+      <h1>Fund Raiser</h1>
+    </header>
   )
 }
 
