@@ -1,5 +1,10 @@
 import Head from 'next/head'
+
+// components
 import Header from '@components/Header'
+import Body from '@components/Body'
+import Hero from '@components/Hero'
+import ProgressBar from '@components/ProgressBar'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -8,14 +13,12 @@ export default function Home() {
       <Head>
         <title>Fundraiser</title>
       </Head>
-
+      <Header title='Fundraiser' />
       <main>
-        <Header title='Fundraiser' />
-        <p className='description'>
-          Get your Dontaions stress free and let everyone see your progess
-        </p>
+        <Hero />
+        <Body />
+        <ProgressBar />
       </main>
-
       <Footer />
     </div>
   )
