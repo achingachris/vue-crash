@@ -1,7 +1,50 @@
-import { Container, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row, Card } from 'react-bootstrap'
 
 const Body = () => {
-  return <div>Body</div>
+  return (
+    <Container className='mt-3'>
+      <Row>
+        <Col md={8}>
+          {/* description card */}
+          <Card>
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Subtitle className='mb-2 text-muted'>
+                Card Subtitle
+              </Card.Subtitle>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Card.Link href='#'>Card Link</Card.Link>
+              <Card.Link href='#'>Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+          {/* donation options card */}
+          <Card>
+            <Card.Body>
+              <Card.Title>Card Title</Card.Title>
+              <Card.Subtitle className='mb-2 text-muted'>
+                Card Subtitle
+              </Card.Subtitle>
+              <Card.Text>
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </Card.Text>
+              <Card.Link href='#'>Card Link</Card.Link>
+              <Card.Link href='#'>Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          {/* card image */}
+          <Card>
+            <Card.Img variant='top' src='https://source.unsplash.com/0cPSKUEANqU' />
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  )
 }
 
 export default Body

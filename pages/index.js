@@ -5,6 +5,7 @@ import Header from '@components/Header'
 import Body from '@components/Body'
 import Hero from '@components/Hero'
 import ProgressBar from '@components/ProgressBar'
+import DonateBtn from '@components/DonateBtn'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Body />
         <ProgressBar />
+        <DonateBtn />
       </main>
       <Footer />
     </div>
